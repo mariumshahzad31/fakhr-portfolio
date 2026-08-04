@@ -1,0 +1,21 @@
+node_modules
+.next
+out
+dist
+build
+coverage
+.vscode
+.DS_Store
+*.log
+.env
+.env.local
+.env.*
+.vercel
+
+# Keep source/public media tracked; ignore bulk archives and editor junk
+*.psd
+*.zip
+*.tar
+*.gz
+*.tgz
+*.7z
