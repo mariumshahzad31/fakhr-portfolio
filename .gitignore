@@ -1,21 +1,35 @@
-node_modules
-.next
-out
-dist
-build
-coverage
-.vscode
+# Dependencies & build output
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.turbo/
+.cache/
+
+# Env & local tooling
+.vercel/
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
 *.log
 .env
 .env.local
 .env.*
-.vercel
+!.env.example
 
-# Keep source/public media tracked; ignore bulk archives and editor junk
+# Archives / editor originals
 *.psd
 *.zip
 *.tar
 *.gz
 *.tgz
 *.7z
+
+# OS / temp
+*.tmp
+*.temp
+*.swp
+*~
