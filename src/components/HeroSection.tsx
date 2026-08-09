@@ -27,7 +27,7 @@ export default function HeroSection() {
             Elegant photography for prestigious, unforgettable moments.
           </h1>
           <p className="mt-6 max-w-xl text-base leading-8 text-[#d6c8b1] sm:text-lg">
-            I create refined visual narratives that feel cinematic, warm, and undeniably premium — from luxury events to modern brand stories.
+            I create refined visual narratives that feel cinematic, warm and undeniably premium from luxury events to modern brand stories.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -80,7 +80,7 @@ export default function HeroSection() {
               <div className="absolute bottom-6 left-6 max-w-[240px] rounded-[24px] border border-white/10 bg-[#080604]/70 p-4 backdrop-blur-xl">
                 <p className="text-[0.65rem] uppercase tracking-[0.28em] text-[#d9c09d]">Signature approach</p>
                 <p className="mt-2 text-sm leading-6 text-[#f2e6d2]">
-                  Calm direction, detailed preparation, and imagery that feels timeless.
+                  Calm direction, detailed preparation and imagery that feels timeless.
                 </p>
               </div>
             </div>

@@ -57,7 +57,7 @@ export default function AboutSection() {
             <div className="mt-6 rounded-[24px] border border-[#d4b895]/20 bg-[#d4b895]/10 p-5">
               <p className="text-sm uppercase tracking-[0.28em] text-[#f9e7cb]">Approach</p>
               <p className="mt-2 text-sm leading-7 text-[#f4e6d4]">
-                Quiet confidence, meticulous preparation, and a luxury feel from first concept to final delivery.
+                Quiet confidence, meticulous preparation and a luxury feel from first concept to final delivery.
               </p>
             </div>
           </div>

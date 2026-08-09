@@ -22,10 +22,10 @@ export default function EventsSection() {
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <p className="mb-4 text-sm uppercase tracking-[0.36em] text-[#dbcaa7]">Selected Work</p>
           <h2 className="text-3xl font-semibold leading-tight text-[#f6eee0] sm:text-4xl">
-            A curated look at weddings, corporate moments, and celebration storytelling.
+            A curated look at weddings, corporate moments and celebration storytelling.
           </h2>
           <p className="mt-4 text-base leading-8 text-[#d7cab4] sm:text-lg">
-            Each project is shaped around atmosphere, emotion, and the feeling you want to leave behind.
+            Each project is shaped around atmosphere, emotion and the feeling you want to leave behind.
           </p>
         </div>
         <Swiper

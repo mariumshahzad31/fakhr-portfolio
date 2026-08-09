@@ -32,11 +32,11 @@ export default function SkillsSection() {
           <div className="max-w-2xl">
             <p className="text-sm uppercase tracking-[0.36em] text-[#dbcaa7]">Core capabilities</p>
             <h2 className="mt-3 text-3xl font-semibold leading-tight text-[#f6eee0] sm:text-4xl">
-              Built for calm execution, elevated detail, and memorable visual impact.
+              Built for calm execution, elevated detail and memorable visual impact.
             </h2>
           </div>
           <p className="max-w-xl text-base leading-8 text-[#d7cab4]">
-            Each assignment is shaped with thoughtful preparation, refined aesthetic judgment, and a strong sense of atmosphere.
+            Each assignment is shaped with thoughtful preparation, refined aesthetic judgment and a strong sense of atmosphere.
           </p>
         </div>
 
