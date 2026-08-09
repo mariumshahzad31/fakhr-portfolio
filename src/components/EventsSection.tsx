@@ -19,11 +19,14 @@ export default function EventsSection() {
         variants={fadeInUp}
         className="mx-auto max-w-7xl"
       >
-        <div className="mb-12 mx-auto max-w-3xl text-center">
-          <p className="mb-4 text-sm uppercase tracking-[0.36em] text-[#dbcaa7]">Event Experiences</p>
+        <div className="mx-auto mb-12 max-w-3xl text-center">
+          <p className="mb-4 text-sm uppercase tracking-[0.36em] text-[#dbcaa7]">Selected Work</p>
           <h2 className="text-3xl font-semibold leading-tight text-[#f6eee0] sm:text-4xl">
-            Cinematic event narratives built for memorable campaigns and celebrations.
+            A curated look at weddings, corporate moments, and celebration storytelling.
           </h2>
+          <p className="mt-4 text-base leading-8 text-[#d7cab4] sm:text-lg">
+            Each project is shaped around atmosphere, emotion, and the feeling you want to leave behind.
+          </p>
         </div>
         <Swiper
           modules={[Navigation, Pagination, Autoplay, A11y]}
@@ -42,8 +45,8 @@ export default function EventsSection() {
         >
           {eventCards.map((event) => (
             <SwiperSlide key={event.title}>
-              <div className="group overflow-hidden rounded-[36px] border border-white/10 bg-[#0d0a08]/75 shadow-soft backdrop-blur-3xl transition duration-500 hover:-translate-y-1">
-                <div className="relative h-[520px] overflow-hidden rounded-[36px] bg-[#0b0907]">
+              <div className="group overflow-hidden rounded-[36px] border border-white/10 bg-[#0d0a08]/80 shadow-soft transition duration-500 hover:-translate-y-1">
+                <div className="relative h-[540px] overflow-hidden rounded-[36px] bg-[#0b0907]">
                   <video
                     className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-105"
                     src={event.videoSrc}
@@ -55,10 +58,21 @@ export default function EventsSection() {
                     aria-label={`${event.title} event preview`}
                   />
                   <div className={`absolute inset-0 ${event.accent}`} />
-                  <div className="absolute bottom-0 left-0 right-0 rounded-b-[36px] bg-gradient-to-t from-[#090706]/95 via-transparent to-transparent px-6 py-8 sm:px-8">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#060504]/95 via-[#060504]/20 to-transparent" />
+                  <div className="absolute left-6 top-6 rounded-full border border-[#d4b895]/30 bg-[#0b0907]/80 px-3 py-2 text-[0.72rem] uppercase tracking-[0.28em] text-[#f4dfbf]">
+                    {event.pill}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 px-6 py-8 sm:px-8 sm:py-10">
                     <p className="mb-2 text-xs uppercase tracking-[0.3em] text-[#dac9a6]">{event.title}</p>
                     <h3 className="text-2xl font-semibold leading-tight text-[#f5ecd8]">{event.subtitle}</h3>
                     <p className="mt-4 max-w-xl text-sm leading-7 text-[#d3c3a3]">{event.description}</p>
+                    <ul className="mt-6 flex flex-wrap gap-2">
+                      {event.highlights.map((highlight) => (
+                        <li key={highlight} className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs uppercase tracking-[0.24em] text-[#f2e1c4]">
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>

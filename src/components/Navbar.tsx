@@ -5,9 +5,9 @@ import { useEffect, useState } from 'react';
 
 const navItems = [
   { label: 'Home', href: 'home' },
-  { label: 'About Me', href: 'about' },
-  { label: 'Events', href: 'events' },
-  { label: 'Contact Me', href: 'contact' },
+  { label: 'About', href: 'about' },
+  { label: 'Work', href: 'events' },
+  { label: 'Contact', href: 'contact' },
 ];
 
 const listVariants = {
@@ -43,18 +43,18 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#080504]/70 backdrop-blur-3xl">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#080504]/80 backdrop-blur-3xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 transition-all duration-500 sm:px-8">
         <button
           type="button"
           onClick={() => handleNavigation('home')}
-          className="text-xl font-semibold uppercase tracking-[0.28em] text-[#f7e8d8] transition-colors duration-200 hover:text-[#f5d8b3]"
+          className="text-lg font-semibold uppercase tracking-[0.28em] text-[#f7e8d8] transition-colors duration-200 hover:text-[#f5d8b3]"
           aria-label="Go to home section"
         >
           Fakhr&apos;s Portfolio
         </button>
 
-        <nav className="hidden items-center gap-10 md:flex">
+        <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
             <button
               key={item.href}
@@ -73,6 +73,13 @@ export default function Navbar() {
             </button>
           ))}
         </nav>
+
+        <a
+          href="#contact"
+          className="hidden rounded-full border border-[#d4b895]/40 bg-[#d4b895]/10 px-4 py-2 text-sm font-medium uppercase tracking-[0.2em] text-[#f7e2c8] transition duration-300 hover:border-[#f4d9b3]/60 hover:bg-[#d4b895]/20 md:inline-flex"
+        >
+          Let&apos;s connect
+        </a>
 
         <button
           type="button"

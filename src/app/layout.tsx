@@ -6,13 +6,22 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swa
 const playfair = Playfair_Display({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-display', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: "Fakhr's Portfolio",
-  description: 'A cinematic premium photography portfolio with elegant event storytelling and luxury visual design.',
+  title: 'Fakhr Shahzad | Premium Photography & Storytelling',
+  description: 'A cinematic photography portfolio showcasing luxury event storytelling, editorial detail, and polished visual narratives.',
   metadataBase: new URL('https://fakhr-portfolio.vercel.app'),
+  alternates: {
+    canonical: 'https://fakhr-portfolio.vercel.app',
+  },
   openGraph: {
-    title: "Fakhr's Portfolio",
-    description: 'A cinematic premium photography portfolio with elegant event storytelling and luxury visual design.',
+    title: 'Fakhr Shahzad | Premium Photography & Storytelling',
+    description: 'A cinematic photography portfolio showcasing luxury event storytelling, editorial detail, and polished visual narratives.',
     type: 'website',
+    url: 'https://fakhr-portfolio.vercel.app',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fakhr Shahzad | Premium Photography & Storytelling',
+    description: 'A cinematic photography portfolio showcasing luxury event storytelling, editorial detail, and polished visual narratives.',
   },
 };
 

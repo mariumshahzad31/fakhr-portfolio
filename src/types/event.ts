@@ -4,4 +4,6 @@ export type EventCard = {
   description: string;
   videoSrc: string;
   accent: string;
+  pill: string;
+  highlights: string[];
 };
