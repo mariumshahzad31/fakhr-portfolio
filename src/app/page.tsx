@@ -18,7 +18,7 @@ export default function Home() {
       <ContactSection />
       <footer className="border-t border-white/10 bg-[#060504]/90 py-8 backdrop-blur-xl">
         <div className="mx-auto max-w-6xl px-6 text-center text-sm text-[#d4c4af] md:px-8">
-          Available for premium commissions worldwide — crafted with calm precision, cinematic warmth, and a polished editorial eye.
+          Available for premium commissions worldwide , crafted with calm precision, cinematic warmth, and a polished editorial eye.
         </div>
       </footer>
     </main>
