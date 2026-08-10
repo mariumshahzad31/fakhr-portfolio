@@ -19,10 +19,6 @@ export default function HeroSection() {
           variants={fadeInUp}
           className="max-w-2xl"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#d4b895]/30 bg-[#d4b895]/10 px-3 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-[#f2d8b0]">
-            <span className="h-2.5 w-2.5 rounded-full bg-[#f1c078]" />
-            Premium visual storytelling
-          </div>
           <h1 className="mt-6 text-[2.4rem] font-semibold leading-[1.02] tracking-[-0.04em] text-[#f9f0e7] sm:text-[3.6rem] lg:text-[4.4rem]">
             Elegant photography for prestigious, unforgettable moments.
           </h1>
@@ -30,20 +26,7 @@ export default function HeroSection() {
             I create refined visual narratives that feel cinematic, warm and undeniably premium from luxury events to modern brand stories.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="#events"
-              className="inline-flex items-center justify-center rounded-full border border-[#d4b895]/40 bg-[#d4b895]/15 px-5 py-3 text-sm font-medium uppercase tracking-[0.2em] text-[#f9e5c9] transition duration-300 hover:border-[#f4d9b3]/60 hover:bg-[#d4b895]/25"
-            >
-              View recent work
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium uppercase tracking-[0.2em] text-[#f7ebdc] transition duration-300 hover:border-white/20 hover:bg-white/10"
-            >
-              Start a conversation
-            </a>
-          </div>
+
 
           <ul className="mt-8 flex flex-wrap gap-3">
             {highlights.map((item) => (
@@ -77,12 +60,7 @@ export default function HeroSection() {
                 sizes="(max-width: 768px) 90vw, 520px"
                 priority
               />
-              <div className="absolute bottom-6 left-6 max-w-[240px] rounded-[24px] border border-white/10 bg-[#080604]/70 p-4 backdrop-blur-xl">
-                <p className="text-[0.65rem] uppercase tracking-[0.28em] text-[#d9c09d]">Signature approach</p>
-                <p className="mt-2 text-sm leading-6 text-[#f2e6d2]">
-                  Calm direction, detailed preparation and imagery that feels timeless.
-                </p>
-              </div>
+              
             </div>
           </div>
         </motion.div>

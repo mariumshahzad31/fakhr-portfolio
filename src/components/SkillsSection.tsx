@@ -6,15 +6,15 @@ import { fadeInGlow } from '../lib/motion';
 const skillGroups = [
   {
     title: 'Visual direction',
-    items: ['Editorial composition', 'Cinematic lighting', 'Storyboarding'],
+    description: 'Planning every shot with intentional lighting, composition and story in mind.',
   },
   {
     title: 'Production',
-    items: ['Event coverage', 'Brand campaigns', 'Luxury shoots'],
+    description: 'Capturing events and brand campaigns with smooth, multi-camera setups.',
   },
   {
     title: 'Delivery',
-    items: ['Post-production', 'Retouching', 'Client collaboration'],
+    description: 'Delivering sharp, beautifully color-graded assets right on time.',
   },
 ];
 
@@ -32,27 +32,20 @@ export default function SkillsSection() {
           <div className="max-w-2xl">
             <p className="text-sm uppercase tracking-[0.36em] text-[#dbcaa7]">Core capabilities</p>
             <h2 className="mt-3 text-3xl font-semibold leading-tight text-[#f6eee0] sm:text-4xl">
-              Built for calm execution, elevated detail and memorable visual impact.
+              Steady hands, sharp eye, dependable results
             </h2>
           </div>
-          <p className="max-w-xl text-base leading-8 text-[#d7cab4]">
-            Each assignment is shaped with thoughtful preparation, refined aesthetic judgment and a strong sense of atmosphere.
-          </p>
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
-          {skillGroups.map((group) => (
-            <div key={group.title} className="rounded-[24px] border border-white/10 bg-[#130e0b]/85 p-6">
-              <h3 className="text-lg font-semibold text-[#f6e8d5]">{group.title}</h3>
-              <ul className="mt-5 space-y-3">
-                {group.items.map((item) => (
-                  <li key={item} className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm text-[#e2d3b7]">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="mt-10 rounded-[24px] border border-white/10 bg-[#130e0b]/85 p-6 sm:p-8">
+          <div className="grid gap-6 sm:grid-cols-3">
+            {skillGroups.map((group) => (
+              <div key={group.title}>
+                <h3 className="text-lg font-semibold text-[#f6e8d5]">{group.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[#e2d3b7]">{group.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </motion.div>
     </section>

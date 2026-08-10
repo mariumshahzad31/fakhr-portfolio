@@ -20,7 +20,6 @@ export default function EventsSection() {
         className="mx-auto max-w-7xl"
       >
         <div className="mx-auto mb-12 max-w-3xl text-center">
-          <p className="mb-4 text-sm uppercase tracking-[0.36em] text-[#dbcaa7]">Selected Work</p>
           <h2 className="text-3xl font-semibold leading-tight text-[#f6eee0] sm:text-4xl">
             A curated look at weddings, corporate moments and celebration storytelling.
           </h2>
