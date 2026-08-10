@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,6 +11,10 @@ import { fadeInUp } from '../lib/motion';
 import { eventCards } from '../utils/eventCards';
 
 export default function EventsSection() {
+  const isImageSource = (src: string): boolean => {
+    return src.toLowerCase().endsWith('.jpg') || src.toLowerCase().endsWith('.jpeg') || src.toLowerCase().endsWith('.png');
+  };
+
   return (
     <section id="events" className="relative px-6 py-24 sm:px-8 lg:px-10">
       <motion.div
@@ -46,16 +51,27 @@ export default function EventsSection() {
             <SwiperSlide key={event.title}>
               <div className="group overflow-hidden rounded-[36px] border border-white/10 bg-[#0d0a08]/80 shadow-soft transition duration-500 hover:-translate-y-1">
                 <div className="relative h-[540px] overflow-hidden rounded-[36px] bg-[#0b0907]">
-                  <video
-                    className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-105"
-                    src={event.videoSrc}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                    aria-label={`${event.title} event preview`}
-                  />
+                  {isImageSource(event.videoSrc) ? (
+                    <Image
+                      src={event.videoSrc}
+                      alt={event.subtitle}
+                      fill
+                      className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-105"
+                      priority={false}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 70vw"
+                    />
+                  ) : (
+                    <video
+                      className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-105"
+                      src={event.videoSrc}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      aria-label={`${event.title} event preview`}
+                    />
+                  )}
                   <div className={`absolute inset-0 ${event.accent}`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#060504]/95 via-[#060504]/20 to-transparent" />
                   <div className="absolute left-6 top-6 rounded-full border border-[#d4b895]/30 bg-[#0b0907]/80 px-3 py-2 text-[0.72rem] uppercase tracking-[0.28em] text-[#f4dfbf]">

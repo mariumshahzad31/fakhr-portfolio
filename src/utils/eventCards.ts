@@ -23,7 +23,7 @@ export const eventCards: EventCard[] = [
     title: 'Celebrations',
     subtitle: 'Milestones with warmth and cinematic glow',
     description: 'Bold, joyful moments rendered with energy, elegance, and a timeless sense of occasion.',
-    videoSrc: '/videos/birthday.mp4',
+    videoSrc: '/videos/birthday.JPG',
     accent: 'bg-gradient-to-br from-[#d5b489]/30 via-transparent to-[#150c0a]/0',
     pill: 'Celebration coverage',
     highlights: ['Energetic storytelling', 'Rich atmosphere', 'Fluid motion'],
